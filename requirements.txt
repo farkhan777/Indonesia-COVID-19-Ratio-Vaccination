@@ -99,4 +99,4 @@ Werkzeug==2.0.2
 widgetsnbextension==3.5.1
 tensorflow-cpu
 gunicorn
-matplotlib==1.1.1
+matplotlib==3.4.2
