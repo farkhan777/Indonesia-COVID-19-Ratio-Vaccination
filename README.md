@@ -27,7 +27,9 @@ The CSV file contains vaccination rate data and its datetime for each respective
 The main concern when creating our Machine Learning model are **country** and **ratio** column.
 
 Based on current dataset, the vaccination rate from `2021-01-28` to `2021-11-20` in Indonesia is illustrated as follows:
-![Vaccination Ratio](https://github.com/farkhan777/Indonesia-COVID-19-Ratio-Vaccination/raw/ilham_deploy_ML/documentation/beranda.jpg?raw=true)
+
+![Vaccination Ratio](https://github.com/farkhan777/Indonesia-COVID-19-Ratio-Vaccination/blob/ilham_deploy_ML/documentation/persebaran-rasio-vaksinasi.jpg?raw=true)
+
 ## Tech Stack
 <br />
 
@@ -38,6 +40,7 @@ Based on current dataset, the vaccination rate from `2021-01-28` to `2021-11-20`
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 
 <br />
+
 ## Modelling
 
 There are various options for time-series model creation. Here, we tried to implement LSTM.
@@ -58,11 +61,13 @@ Overall, the architecture of this model is LSTM layer as the input layer, then i
 
 ## Model Evaluation 🚧
 
-The training and testing MAE is illustrated as follows:
+The prediction of vaccination rate in Indonesia
 
-![Training MAE]()
+![Prediction result](https://github.com/farkhan777/Indonesia-COVID-19-Ratio-Vaccination/blob/ilham_deploy_ML/documentation/prediction-result.jpg?raw=true)
 
-![Testing MAE]()
+The training and validation MAE is illustrated as follows:
+
+![Training MAE](https://github.com/farkhan777/Indonesia-COVID-19-Ratio-Vaccination/blob/ilham_deploy_ML/documentation/train-and-validation-mae.jpg?raw=true)
 
 ## Evaluation
 

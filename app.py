@@ -22,7 +22,8 @@ def predict_json():
     original_json = df_original.to_json(orient='records').strip("\'")
 
     return {"prediction": json.loads(prediction_json),
-            "original": json.loads(original_json)}
+            "original": json.loads(original_json),
+            "total": json.loads(original_json) + json.loads(prediction_json)}
 
 
 if __name__ == "__main__":
