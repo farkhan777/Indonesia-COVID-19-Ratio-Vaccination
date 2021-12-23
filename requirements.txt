@@ -6,3 +6,5 @@ pillow
 numpy
 matplotlib
 seaborn
+sklearn
+json
