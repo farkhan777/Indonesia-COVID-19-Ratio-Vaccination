@@ -2,6 +2,7 @@ flask
 pandas
 tensorflow-cpu
 gunicorn
+flask_cors
 pillow
 numpy
 matplotlib

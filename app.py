@@ -1,9 +1,13 @@
 import predict_vaccination
 from flask import Flask
+from flask_cors import CORS, cross_origin
+
 import pandas as pd
 import json
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 @app.route('/', methods=['GET'])
@@ -12,6 +16,7 @@ def index():
 
 
 @app.route('/api/predict_json', methods=['GET'])
+@cross_origin()
 def predict_json():
     df_forecast, df_original = predict_vaccination.predict()
 
