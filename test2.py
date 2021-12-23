@@ -90,7 +90,7 @@ model = tf.keras.models.Sequential([
     tf.keras.layers.LSTM(64, activation='relu', input_shape=(
         trainX.shape[1], trainX.shape[2]), return_sequences=True),
     tf.keras.layers.LSTM(32, activation='relu', return_sequences=False),
-    tf.keras.layers.Dropout(0.2),
+    tf.keras.layers.Dropout(0.5),
     tf.keras.layers.Dense(32, activation="relu"),
     tf.keras.layers.Dense(trainY.shape[1])
 ])
