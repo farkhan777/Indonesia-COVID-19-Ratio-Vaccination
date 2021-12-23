@@ -1,3 +1,5 @@
+# This is just for testing python code locally
+
 
 # %%
 import os
@@ -137,7 +139,7 @@ plt.legend()
 # Start with the last day in training date and predict future
 n_future = 248  # Redefining n_future to extend prediction dates beyond original n_future dates
 forecast_period_dates = pd.date_range(
-    list(sorted_data_graph['date'])[-30], periods=n_future, freq='1d').tolist()
+    list(sorted_data_graph['date'])[-1], periods=n_future, freq='1d').tolist()
 
 print(forecast_period_dates)
 
@@ -171,10 +173,14 @@ original = sorted_data_graph[['date', 'ratio']]
 original['date'] = pd.to_datetime(original['date'])
 original = original.loc[original['date'] >= '2021-01-28']
 
+
 print('5 Baris Teratas:\n', original.head())
 print('\n5 Baris Terbawah:\n', original.tail())
 print('\nShape Dataset:\n', original.shape)
 
+df_forecast['ratio'] = df_forecast['ratio'] + \
+    original.loc[original.index[-1], "ratio"]
+print(df_forecast)
 # %%
 fig, ax = plt.subplots(figsize=(15, 7))
 
