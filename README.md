@@ -63,7 +63,7 @@ Overall, the architecture of this model is LSTM layer as the input layer, then i
 
 The prediction of vaccination rate in Indonesia
 
-![Prediction result](https://github.com/farkhan777/Indonesia-COVID-19-Ratio-Vaccination/blob/ilham_deploy_ML/documentation/prediction-result.png?raw=true)
+![Prediction result](https://github.com/farkhan777/Indonesia-COVID-19-Ratio-Vaccination/blob/main/documentation/prediction-result.png?raw=true)
 
 The training and validation MAE is illustrated as follows:
 
